@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
@@ -11,9 +12,9 @@
     
     <div>
         <form action="/" id="survey-form">
-            <div>
+            <div class="form1">
                 <label for="name-label" id="name-label">Name
-                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="text" name="name" id="name" placeholder="John Doe" required>
                 </label>
                 <label for="email-label" id="email-label">Email
                     <input type="email" name="email" id="email" placeholder="johndoe@gmail.co" required>
@@ -23,7 +24,7 @@
                 </label>
             </div>
 
-            <div>
+            <div class="form2">
                 <p>How did you learn about <a href="/">Survey Form</a>? </p>
                 <select name="dropdown" id="dropdown">
                     <option value="">Please Select</option>
@@ -34,51 +35,53 @@
                 </select>
             </div>
 
-            <div>
+            <div class="form3">
                 <p>What is your gender ?</p>
                 <label for="female"> 
-                    <input type="radio" name="female" id="female" value="female">
+                    <input type="radio" name="gender" id="female" value="female">
                     Female
                 </label>
                 <label for="male">
-                    <input type="radio" name="male" id="male" value="male">
+                    <input type="radio" name="gender" id="male" value="male">
                     Male
                 </label>
                 <label for="other">
-                    <input type="radio" name="other" id="other" value="other">
+                    <input type="radio" name="gender" id="other" value="other">
                     Other
                 </label>
             </div>
 
-            <div>
+            <div class="form4">
                 <p>What is your marital status ?</p>
-                <label for="single"> 
-                    <input type="radio" name="single" id="single" value="single">
-                    Single
-                </label>
-                <label for="married">
-                    <input type="radio" name="married" id="married" value="married">
-                    Married
-                </label>
-                <label for="divorced">
-                    <input type="radio" name="divorced" id="divorced" value="divorced">
-                    Divorced
-                </label>
-                <label for="widowed">
-                    <input type="radio" name="widowed" id="widowed" value="widowed">
-                    Widowed
-                </label>
-                <label for="divorced">
-                    <input type="radio" name="divorced" id="divorced" value="divorced">
-                    Divorced
-                </label>
-                <label for="no answer">
-                    <input type="radio" name="no answer" id="no answer" value="no answer">
-                    Prefer not to answer
-                </label>
+                <div class="form4-div">
+                    <label for="single"> 
+                        <input type="radio" name="status" id="single" value="single">
+                        Single
+                    </label>
+                    <label for="married">
+                        <input type="radio" name="status" id="married" value="married">
+                        Married
+                    </label>
+                    <label for="divorced">
+                        <input type="radio" name="status" id="divorced" value="divorced">
+                        Divorced
+                    </label>
+                    <label for="widowed">
+                        <input type="radio" name="status" id="widowed" value="widowed">
+                        Widowed
+                    </label>
+                    <label for="divorced">
+                        <input type="radio" name="status" id="divorced" value="divorced">
+                        Divorced
+                    </label>
+                    <label for="no answer">
+                        <input type="radio" name="status" id="no answer" value="no answer">
+                        Prefer not to answer
+                    </label>
+                </div>
             </div>
 
-            <div>
+            <div class="form5">
                 <p>What support options have you used? (check all that apply)</p>
                 <label for="documentation">
                     <input type="checkbox" name="documentation" id="documentation" value="documentation">
@@ -95,13 +98,14 @@
                 <label for="chat">
                     <input type="checkbox" name="chat" id="chat" value="chat">
                     Chat
+                </label>
                 <label for="phone">
                     <input type="checkbox" name="phone" id="phone" value="phone">
                     Phone
                 </label>
             </div>
 
-            <div>
+            <div class="form6">
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message here..."></textarea>
             </div>
 

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 0;
+    background-image: url(https://img.freepik.com/premium-photo/clear-blue-sky-sunset-with-horizon-calm-ocean-sea-background-picturesque_31965-140829.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+}
+
+#description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#survey-form {
+    width: 600px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.form1, .form2, .form3, .form4, .form5, .form6{
+    width: 100%;
+}
+
+.form1 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form1 label input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form2 select {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px 0 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form3, .form4, .form5{
+    margin: 10px 0;
+}
+
+.form3 label , .form5 label{
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+    padding: 2px 0;
+}
+
+.form4-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 2px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form6 textarea {
+    border-radius: 5px solid black;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(7, 123, 218);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
